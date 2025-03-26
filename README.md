@@ -2,7 +2,7 @@
 
 Merchant APIs
 - API version: 6.0
-  - Build date: 2025-03-20T18:05:09.722690784+07:00[Asia/Ho_Chi_Minh]
+  - Build date: 2025-03-26T14:02:03.006856+07:00[Asia/Ho_Chi_Minh]
   - Generator version: 7.13.0-SNAPSHOT
 
 Technical document APIs for Merchant APIs

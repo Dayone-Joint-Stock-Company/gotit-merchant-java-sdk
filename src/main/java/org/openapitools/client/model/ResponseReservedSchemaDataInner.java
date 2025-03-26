@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ResponseReservedSchemaDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-20T18:05:09.722690784+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-26T14:02:03.006856+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
 public class ResponseReservedSchemaDataInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -62,6 +62,11 @@ public class ResponseReservedSchemaDataInner {
   @SerializedName(SERIALIZED_NAME_VALUE)
   @javax.annotation.Nullable
   private Integer value;
+
+  public static final String SERIALIZED_NAME_STATE = "state";
+  @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
+  private Integer state;
 
   public static final String SERIALIZED_NAME_VOUCHER_TYPE = "voucher_type";
   @SerializedName(SERIALIZED_NAME_VOUCHER_TYPE)
@@ -116,6 +121,25 @@ public class ResponseReservedSchemaDataInner {
 
   public void setValue(@javax.annotation.Nullable Integer value) {
     this.value = value;
+  }
+
+
+  public ResponseReservedSchemaDataInner state(@javax.annotation.Nullable Integer state) {
+    this.state = state;
+    return this;
+  }
+
+  /**
+   * State of voucher
+   * @return state
+   */
+  @javax.annotation.Nullable
+  public Integer getState() {
+    return state;
+  }
+
+  public void setState(@javax.annotation.Nullable Integer state) {
+    this.state = state;
   }
 
 
@@ -188,6 +212,7 @@ public class ResponseReservedSchemaDataInner {
     ResponseReservedSchemaDataInner responseReservedSchemaDataInner = (ResponseReservedSchemaDataInner) o;
     return Objects.equals(this.code, responseReservedSchemaDataInner.code) &&
         Objects.equals(this.value, responseReservedSchemaDataInner.value) &&
+        Objects.equals(this.state, responseReservedSchemaDataInner.state) &&
         Objects.equals(this.voucherType, responseReservedSchemaDataInner.voucherType) &&
         Objects.equals(this.conditions, responseReservedSchemaDataInner.conditions) &&
         Objects.equals(this.redemptions, responseReservedSchemaDataInner.redemptions);
@@ -199,7 +224,7 @@ public class ResponseReservedSchemaDataInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, value, voucherType, conditions, redemptions);
+    return Objects.hash(code, value, state, voucherType, conditions, redemptions);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -215,6 +240,7 @@ public class ResponseReservedSchemaDataInner {
     sb.append("class ResponseReservedSchemaDataInner {\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    voucherType: ").append(toIndentedString(voucherType)).append("\n");
     sb.append("    conditions: ").append(toIndentedString(conditions)).append("\n");
     sb.append("    redemptions: ").append(toIndentedString(redemptions)).append("\n");
@@ -242,6 +268,7 @@ public class ResponseReservedSchemaDataInner {
     openapiFields = new HashSet<String>();
     openapiFields.add("code");
     openapiFields.add("value");
+    openapiFields.add("state");
     openapiFields.add("voucher_type");
     openapiFields.add("conditions");
     openapiFields.add("redemptions");
