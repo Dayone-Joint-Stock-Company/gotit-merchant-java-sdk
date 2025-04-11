@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-26T14:02:03.006856+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-11T16:25:42.013225+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
 public class ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore {
   public static final String SERIALIZED_NAME_NAME_VI = "name_vi";
   @SerializedName(SERIALIZED_NAME_NAME_VI)

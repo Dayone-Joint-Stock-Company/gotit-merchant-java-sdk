@@ -1,13 +1,13 @@
 # GotItMerchantApi
 
-All URIs are relative to *https://merchant-api-stg.gotit.vn*
+All URIs are relative to *https://openapi-stg.gotit.vn*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**checkMultiple**](GotItMerchantApi.md#checkMultiple) | **POST** /api/v6.0/checkmultiple | Check multiple vouchers are valid or not |
-| [**reserved**](GotItMerchantApi.md#reserved) | **POST** /api/v6.0/reserved | Reserved multiple vouchers for a fixed bill number. |
-| [**unreserved**](GotItMerchantApi.md#unreserved) | **POST** /api/v6.0/unreserved | Reserved multiple vouchers for a fixed bill number. |
-| [**useMultiple**](GotItMerchantApi.md#useMultiple) | **POST** /api/v6.0/usemultiple | Reserved multiple vouchers for a fixed bill number. |
+| [**checkMultiple**](GotItMerchantApi.md#checkMultiple) | **POST** /merchant/v6.0/checkmultiple | Check multiple vouchers are valid or not |
+| [**reserved**](GotItMerchantApi.md#reserved) | **POST** /merchant/v6.0/reserved | Reserved multiple vouchers for a fixed bill number. |
+| [**unreserved**](GotItMerchantApi.md#unreserved) | **POST** /merchant/v6.0/unreserved | Reserved multiple vouchers for a fixed bill number. |
+| [**useMultiple**](GotItMerchantApi.md#useMultiple) | **POST** /merchant/v6.0/usemultiple | Reserved multiple vouchers for a fixed bill number. |
 
 
 <a id="checkMultiple"></a>
@@ -30,7 +30,7 @@ import org.openapitools.client.api.GotItMerchantApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://merchant-api-stg.gotit.vn");
+    defaultClient.setBasePath("https://openapi-stg.gotit.vn");
 
     GotItMerchantApi apiInstance = new GotItMerchantApi(defaultClient);
     RequestCheckMultipleBodySchema requestCheckMultipleBodySchema = new RequestCheckMultipleBodySchema(); // RequestCheckMultipleBodySchema | 
@@ -93,7 +93,7 @@ import org.openapitools.client.api.GotItMerchantApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://merchant-api-stg.gotit.vn");
+    defaultClient.setBasePath("https://openapi-stg.gotit.vn");
 
     GotItMerchantApi apiInstance = new GotItMerchantApi(defaultClient);
     RequestReservedBodySchema requestReservedBodySchema = new RequestReservedBodySchema(); // RequestReservedBodySchema | 
@@ -156,7 +156,7 @@ import org.openapitools.client.api.GotItMerchantApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://merchant-api-stg.gotit.vn");
+    defaultClient.setBasePath("https://openapi-stg.gotit.vn");
 
     GotItMerchantApi apiInstance = new GotItMerchantApi(defaultClient);
     RequestUnReservedBodySchema requestUnReservedBodySchema = new RequestUnReservedBodySchema(); // RequestUnReservedBodySchema | 
@@ -219,7 +219,7 @@ import org.openapitools.client.api.GotItMerchantApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://merchant-api-stg.gotit.vn");
+    defaultClient.setBasePath("https://openapi-stg.gotit.vn");
 
     GotItMerchantApi apiInstance = new GotItMerchantApi(defaultClient);
     RequestMarkUseMultipleBodySchema requestMarkUseMultipleBodySchema = new RequestMarkUseMultipleBodySchema(); // RequestMarkUseMultipleBodySchema | 

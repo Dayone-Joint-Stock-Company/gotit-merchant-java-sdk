@@ -61,11 +61,11 @@ import org.openapitools.client.auth.ApiKeyAuth;
  */
 public class ApiClient {
 
-    private String basePath = "https://merchant-api-stg.gotit.vn";
+    private String basePath = "https://openapi-stg.gotit.vn";
     protected List<ServerConfiguration> servers = new ArrayList<ServerConfiguration>(Arrays.asList(
     new ServerConfiguration(
-      "https://merchant-api-stg.gotit.vn",
-      "Merchant APIs Staging",
+      "https://openapi-stg.gotit.vn",
+      "Merchant APIs Staging use open api domain",
       new HashMap<String, ServerVariable>()
     )
   ));
@@ -156,7 +156,7 @@ public class ApiClient {
     /**
      * Set base path
      *
-     * @param basePath Base path of the URL (e.g https://merchant-api-stg.gotit.vn
+     * @param basePath Base path of the URL (e.g https://openapi-stg.gotit.vn
      * @return An instance of OkHttpClient
      */
     public ApiClient setBasePath(String basePath) {

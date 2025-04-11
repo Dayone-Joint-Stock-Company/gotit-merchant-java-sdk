@@ -110,7 +110,7 @@ public class GotItMerchantApi {
         Object localVarPostBody = requestCheckMultipleBodySchema;
 
         // create path and map variables
-        String localVarPath = "/api/v6.0/checkmultiple";
+        String localVarPath = "/merchant/v6.0/checkmultiple";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -236,7 +236,7 @@ public class GotItMerchantApi {
         Object localVarPostBody = requestReservedBodySchema;
 
         // create path and map variables
-        String localVarPath = "/api/v6.0/reserved";
+        String localVarPath = "/merchant/v6.0/reserved";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -362,7 +362,7 @@ public class GotItMerchantApi {
         Object localVarPostBody = requestUnReservedBodySchema;
 
         // create path and map variables
-        String localVarPath = "/api/v6.0/unreserved";
+        String localVarPath = "/merchant/v6.0/unreserved";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -488,7 +488,7 @@ public class GotItMerchantApi {
         Object localVarPostBody = requestMarkUseMultipleBodySchema;
 
         // create path and map variables
-        String localVarPath = "/api/v6.0/usemultiple";
+        String localVarPath = "/merchant/v6.0/usemultiple";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();

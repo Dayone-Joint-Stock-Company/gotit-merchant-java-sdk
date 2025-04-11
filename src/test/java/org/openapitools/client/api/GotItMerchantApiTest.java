@@ -23,7 +23,7 @@ public class GotItMerchantApiTest {
     @BeforeEach
     public void setUp() {
         ApiClient apiClient = new ApiClient();
-        apiClient.setBasePath("https://merchant-api-stg.gotit.vn");
+        apiClient.setBasePath("https://openapi-stg.gotit.vn");
         api = new GotItMerchantApi(apiClient);
     }
 
