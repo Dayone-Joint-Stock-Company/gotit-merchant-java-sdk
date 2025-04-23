@@ -168,5 +168,5 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 To run the tests, use:
 
 ```bash
-go test ./test/
+mvn clean deploy
 ```

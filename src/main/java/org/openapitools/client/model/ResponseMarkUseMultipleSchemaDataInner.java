@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ResponseMarkUseMultipleSchemaDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-11T16:25:42.013225+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-23T16:39:17.709679+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
 public class ResponseMarkUseMultipleSchemaDataInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -62,6 +62,11 @@ public class ResponseMarkUseMultipleSchemaDataInner {
   @SerializedName(SERIALIZED_NAME_VALUE)
   @javax.annotation.Nullable
   private Integer value;
+
+  public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
+  @javax.annotation.Nullable
+  private Integer productId;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
@@ -121,6 +126,25 @@ public class ResponseMarkUseMultipleSchemaDataInner {
 
   public void setValue(@javax.annotation.Nullable Integer value) {
     this.value = value;
+  }
+
+
+  public ResponseMarkUseMultipleSchemaDataInner productId(@javax.annotation.Nullable Integer productId) {
+    this.productId = productId;
+    return this;
+  }
+
+  /**
+   * Product ID
+   * @return productId
+   */
+  @javax.annotation.Nullable
+  public Integer getProductId() {
+    return productId;
+  }
+
+  public void setProductId(@javax.annotation.Nullable Integer productId) {
+    this.productId = productId;
   }
 
 
@@ -212,6 +236,7 @@ public class ResponseMarkUseMultipleSchemaDataInner {
     ResponseMarkUseMultipleSchemaDataInner responseMarkUseMultipleSchemaDataInner = (ResponseMarkUseMultipleSchemaDataInner) o;
     return Objects.equals(this.code, responseMarkUseMultipleSchemaDataInner.code) &&
         Objects.equals(this.value, responseMarkUseMultipleSchemaDataInner.value) &&
+        Objects.equals(this.productId, responseMarkUseMultipleSchemaDataInner.productId) &&
         Objects.equals(this.state, responseMarkUseMultipleSchemaDataInner.state) &&
         Objects.equals(this.voucherType, responseMarkUseMultipleSchemaDataInner.voucherType) &&
         Objects.equals(this.conditions, responseMarkUseMultipleSchemaDataInner.conditions) &&
@@ -224,7 +249,7 @@ public class ResponseMarkUseMultipleSchemaDataInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, value, state, voucherType, conditions, redemptions);
+    return Objects.hash(code, value, productId, state, voucherType, conditions, redemptions);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -240,6 +265,7 @@ public class ResponseMarkUseMultipleSchemaDataInner {
     sb.append("class ResponseMarkUseMultipleSchemaDataInner {\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    voucherType: ").append(toIndentedString(voucherType)).append("\n");
     sb.append("    conditions: ").append(toIndentedString(conditions)).append("\n");
@@ -268,6 +294,7 @@ public class ResponseMarkUseMultipleSchemaDataInner {
     openapiFields = new HashSet<String>();
     openapiFields.add("code");
     openapiFields.add("value");
+    openapiFields.add("product_id");
     openapiFields.add("state");
     openapiFields.add("voucher_type");
     openapiFields.add("conditions");

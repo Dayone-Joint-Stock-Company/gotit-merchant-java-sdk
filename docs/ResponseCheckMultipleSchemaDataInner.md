@@ -9,6 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**code** | **String** | Voucher code |  [optional] |
 |**value** | **Integer** | Value of voucher |  [optional] |
+|**productId** | **Integer** | Product ID |  [optional] |
 |**state** | **Integer** | State of voucher |  [optional] |
 |**voucherType** | **String** | Voucher type, standard or conditional |  [optional] |
 |**expiryDate** | **String** | Expiry date of voucher (YYYY-MM-DD) |  [optional] |

@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * ResponseUnReservedSchemaDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-11T16:25:42.013225+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-23T16:39:17.709679+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.13.0-SNAPSHOT")
 public class ResponseUnReservedSchemaDataInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -60,6 +60,11 @@ public class ResponseUnReservedSchemaDataInner {
   @SerializedName(SERIALIZED_NAME_VALUE)
   @javax.annotation.Nullable
   private Integer value;
+
+  public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
+  @javax.annotation.Nullable
+  private Integer productId;
 
   public static final String SERIALIZED_NAME_VOUCHER_TYPE = "voucher_type";
   @SerializedName(SERIALIZED_NAME_VOUCHER_TYPE)
@@ -107,6 +112,25 @@ public class ResponseUnReservedSchemaDataInner {
   }
 
 
+  public ResponseUnReservedSchemaDataInner productId(@javax.annotation.Nullable Integer productId) {
+    this.productId = productId;
+    return this;
+  }
+
+  /**
+   * Product ID
+   * @return productId
+   */
+  @javax.annotation.Nullable
+  public Integer getProductId() {
+    return productId;
+  }
+
+  public void setProductId(@javax.annotation.Nullable Integer productId) {
+    this.productId = productId;
+  }
+
+
   public ResponseUnReservedSchemaDataInner voucherType(@javax.annotation.Nullable String voucherType) {
     this.voucherType = voucherType;
     return this;
@@ -138,6 +162,7 @@ public class ResponseUnReservedSchemaDataInner {
     ResponseUnReservedSchemaDataInner responseUnReservedSchemaDataInner = (ResponseUnReservedSchemaDataInner) o;
     return Objects.equals(this.code, responseUnReservedSchemaDataInner.code) &&
         Objects.equals(this.value, responseUnReservedSchemaDataInner.value) &&
+        Objects.equals(this.productId, responseUnReservedSchemaDataInner.productId) &&
         Objects.equals(this.voucherType, responseUnReservedSchemaDataInner.voucherType);
   }
 
@@ -147,7 +172,7 @@ public class ResponseUnReservedSchemaDataInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, value, voucherType);
+    return Objects.hash(code, value, productId, voucherType);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -163,6 +188,7 @@ public class ResponseUnReservedSchemaDataInner {
     sb.append("class ResponseUnReservedSchemaDataInner {\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    voucherType: ").append(toIndentedString(voucherType)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -188,6 +214,7 @@ public class ResponseUnReservedSchemaDataInner {
     openapiFields = new HashSet<String>();
     openapiFields.add("code");
     openapiFields.add("value");
+    openapiFields.add("product_id");
     openapiFields.add("voucher_type");
 
     // a set of required properties/fields (JSON key names)
