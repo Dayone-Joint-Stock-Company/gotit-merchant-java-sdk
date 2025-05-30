@@ -337,6 +337,7 @@ components:
             - SKU001
             - SKU001
             start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         - code: "070898022379"
           redemptions:
@@ -369,6 +370,7 @@ components:
             - SKU001
             - SKU001
             start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         success: true
         message_en: Valid voucher
@@ -422,9 +424,17 @@ components:
           voucher_type: conditional
           state: 4
           conditions:
+            exclude_specific_date:
+            - 2025-01-01
+            - 2025-01-01
+            exclude_recurring_day:
+            - Tuesday
+            - Tuesday
             redeemable_skus:
             - SKU001
             - SKU001
+            start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         - code: "070898022379"
           redemptions:
@@ -444,9 +454,17 @@ components:
           voucher_type: conditional
           state: 4
           conditions:
+            exclude_specific_date:
+            - 2025-01-01
+            - 2025-01-01
+            exclude_recurring_day:
+            - Tuesday
+            - Tuesday
             redeemable_skus:
             - SKU001
             - SKU001
+            start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         success: true
         message_en: Valid voucher
@@ -506,9 +524,17 @@ components:
           voucher_type: conditional
           state: 1
           conditions:
+            exclude_specific_date:
+            - 2025-01-01
+            - 2025-01-01
+            exclude_recurring_day:
+            - Tuesday
+            - Tuesday
             redeemable_skus:
             - SKU001
             - SKU001
+            start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         - code: "070898022379"
           redemptions:
@@ -524,9 +550,17 @@ components:
           voucher_type: conditional
           state: 1
           conditions:
+            exclude_specific_date:
+            - 2025-01-01
+            - 2025-01-01
+            exclude_recurring_day:
+            - Tuesday
+            - Tuesday
             redeemable_skus:
             - SKU001
             - SKU001
+            start_date: 2025-01-10
+            order_value: 100000
           value: 100000
         success: true
         message_en: Valid voucher
@@ -639,6 +673,7 @@ components:
         - SKU001
         - SKU001
         start_date: 2025-01-10
+        order_value: 100000
       properties:
         start_date:
           description: Promo start date (YYYY-MM-DD)
@@ -656,6 +691,10 @@ components:
             example: Tuesday
             type: string
           type: array
+        order_value:
+          description: Order value of voucher type = conditional
+          example: 100000
+          type: integer
         redeemable_skus:
           description: "List of redeemable SKUs of the voucher code. For voucher type\
             \ = conditional, bill number must contain at least 1 redeemable SKU of\
@@ -770,6 +809,7 @@ components:
           - SKU001
           - SKU001
           start_date: 2025-01-10
+          order_value: 100000
         value: 100000
       properties:
         code:
@@ -807,22 +847,6 @@ components:
           $ref: '#/components/schemas/ResponseCheckMultipleSchema_data_inner_conditions'
         redemptions:
           $ref: '#/components/schemas/ResponseCheckMultipleSchema_data_inner_redemptions'
-      type: object
-    ResponseMarkUseMultipleSchema_data_inner_conditions:
-      description: Include information involve with voucher type is conditional
-      example:
-        redeemable_skus:
-        - SKU001
-        - SKU001
-      properties:
-        redeemable_skus:
-          description: "List of redeemable SKUs of the voucher code. For voucher type\
-            \ = conditional, bill number must contain at least 1 redeemable SKU of\
-            \ the voucher."
-          items:
-            example: SKU001
-            type: string
-          type: array
       type: object
     ResponseMarkUseMultipleSchema_data_inner_redemptions:
       description: Include information related to the use of the voucher (all types)
@@ -878,9 +902,17 @@ components:
         voucher_type: conditional
         state: 4
         conditions:
+          exclude_specific_date:
+          - 2025-01-01
+          - 2025-01-01
+          exclude_recurring_day:
+          - Tuesday
+          - Tuesday
           redeemable_skus:
           - SKU001
           - SKU001
+          start_date: 2025-01-10
+          order_value: 100000
         value: 100000
       properties:
         code:
@@ -907,7 +939,7 @@ components:
           example: conditional
           type: string
         conditions:
-          $ref: '#/components/schemas/ResponseMarkUseMultipleSchema_data_inner_conditions'
+          $ref: '#/components/schemas/ResponseCheckMultipleSchema_data_inner_conditions'
         redemptions:
           $ref: '#/components/schemas/ResponseMarkUseMultipleSchema_data_inner_redemptions'
       type: object
@@ -965,9 +997,17 @@ components:
         voucher_type: conditional
         state: 1
         conditions:
+          exclude_specific_date:
+          - 2025-01-01
+          - 2025-01-01
+          exclude_recurring_day:
+          - Tuesday
+          - Tuesday
           redeemable_skus:
           - SKU001
           - SKU001
+          start_date: 2025-01-10
+          order_value: 100000
         value: 100000
       properties:
         code:
@@ -994,7 +1034,7 @@ components:
           example: conditional
           type: string
         conditions:
-          $ref: '#/components/schemas/ResponseMarkUseMultipleSchema_data_inner_conditions'
+          $ref: '#/components/schemas/ResponseCheckMultipleSchema_data_inner_conditions'
         redemptions:
           $ref: '#/components/schemas/ResponseReservedSchema_data_inner_redemptions'
       type: object
