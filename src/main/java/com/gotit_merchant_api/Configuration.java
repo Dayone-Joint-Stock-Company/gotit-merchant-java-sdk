@@ -13,7 +13,7 @@
 
 package com.gotit_merchant_api;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T16:00:27.551247+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T17:38:34.348758+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.12.0")
 public class Configuration {
     public static final String VERSION = "6.0";
 

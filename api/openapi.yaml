@@ -694,6 +694,7 @@ components:
         order_value:
           description: Order value of voucher type = conditional
           example: 100000
+          nullable: true
           type: integer
         redeemable_skus:
           description: "List of redeemable SKUs of the voucher code. For voucher type\

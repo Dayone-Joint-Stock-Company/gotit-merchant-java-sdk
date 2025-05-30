@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,7 +51,7 @@ import com.gotit_merchant_api.JSON;
 /**
  * Include information involve with voucher type is conditional
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T16:00:27.551247+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T17:38:34.348758+07:00[Asia/Ho_Chi_Minh]", comments = "Generator version: 7.12.0")
 public class ResponseCheckMultipleSchemaDataInnerConditions {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
@@ -216,9 +217,20 @@ public class ResponseCheckMultipleSchemaDataInnerConditions {
         Objects.equals(this.redeemableSkus, responseCheckMultipleSchemaDataInnerConditions.redeemableSkus);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(startDate, excludeSpecificDate, excludeRecurringDay, orderValue, redeemableSkus);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

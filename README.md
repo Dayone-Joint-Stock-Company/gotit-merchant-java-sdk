@@ -75,7 +75,7 @@ import com.gotit_merchant_api.ApiClient;
 import com.gotit_merchant_api.ApiException;
 import com.gotit_merchant_api.Configuration;
 import com.gotit_merchant_api.model.*;
-import com.gotit_merchant.api.GotItMerchantApi;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {
