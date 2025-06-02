@@ -21,11 +21,11 @@ Check multiple vouchers are valid or not
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.GotItMerchantApi;
+import com.gotit_merchant_api.ApiClient;
+import com.gotit_merchant_api.ApiException;
+import com.gotit_merchant_api.Configuration;
+import com.gotit_merchant_api.models.*;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -84,11 +84,11 @@ Reserved multiple vouchers for a fixed bill number.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.GotItMerchantApi;
+import com.gotit_merchant_api.ApiClient;
+import com.gotit_merchant_api.ApiException;
+import com.gotit_merchant_api.Configuration;
+import com.gotit_merchant_api.models.*;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -147,11 +147,11 @@ Reserved multiple vouchers for a fixed bill number.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.GotItMerchantApi;
+import com.gotit_merchant_api.ApiClient;
+import com.gotit_merchant_api.ApiException;
+import com.gotit_merchant_api.Configuration;
+import com.gotit_merchant_api.models.*;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -210,11 +210,11 @@ Reserved multiple vouchers for a fixed bill number.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.GotItMerchantApi;
+import com.gotit_merchant_api.ApiClient;
+import com.gotit_merchant_api.ApiException;
+import com.gotit_merchant_api.Configuration;
+import com.gotit_merchant_api.models.*;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {

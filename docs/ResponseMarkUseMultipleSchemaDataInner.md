@@ -12,7 +12,7 @@
 |**productId** | **Integer** | Product ID |  [optional] |
 |**state** | **Integer** | State of voucher |  [optional] |
 |**voucherType** | **String** | Voucher type, standard or conditional |  [optional] |
-|**conditions** | [**ResponseMarkUseMultipleSchemaDataInnerConditions**](ResponseMarkUseMultipleSchemaDataInnerConditions.md) |  |  [optional] |
+|**conditions** | [**ResponseCheckMultipleSchemaDataInnerConditions**](ResponseCheckMultipleSchemaDataInnerConditions.md) |  |  [optional] |
 |**redemptions** | [**ResponseMarkUseMultipleSchemaDataInnerRedemptions**](ResponseMarkUseMultipleSchemaDataInnerRedemptions.md) |  |  [optional] |
 
 

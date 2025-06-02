@@ -30,8 +30,8 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
   <groupId>com.dayone</groupId>
-  <artifactId>gotit-merchant</artifactId>
-  <version>1.0.0</version>
+  <artifactId>gotit-merchant-api</artifactId>
+  <version>6.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -42,12 +42,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'gotit-merchant' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'gotit-merchant' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'gotit-merchant-api' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'gotit-merchant-api' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "com.dayone:gotit-merchant:1.0.0"
+     implementation "com.dayone:gotit-merchant-api:6.0"
   }
 ```
 
@@ -61,7 +61,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/gotit-merchant-1.0.0.jar`
+* `target/gotit-merchant-api-6.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -71,11 +71,11 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.model.*;
-import org.openapitools.client.api.GotItMerchantApi;
+import com.gotit_merchant_api.ApiClient;
+import com.gotit_merchant_api.ApiException;
+import com.gotit_merchant_api.Configuration;
+import com.gotit_merchant_api.model.*;
+import com.gotit_merchant_api.GotItMerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -130,27 +130,26 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
-- [RequestCheckMultipleBodySchema](docs/RequestCheckMultipleBodySchema.md)
-- [RequestCheckMultipleBodySchemaSkusInfoInner](docs/RequestCheckMultipleBodySchemaSkusInfoInner.md)
-- [RequestMarkUseMultipleBodySchema](docs/RequestMarkUseMultipleBodySchema.md)
-- [RequestReservedBodySchema](docs/RequestReservedBodySchema.md)
-- [RequestUnReservedBodySchema](docs/RequestUnReservedBodySchema.md)
-- [ResponseCheckMultipleSchema](docs/ResponseCheckMultipleSchema.md)
-- [ResponseCheckMultipleSchemaDataInner](docs/ResponseCheckMultipleSchemaDataInner.md)
-- [ResponseCheckMultipleSchemaDataInnerConditions](docs/ResponseCheckMultipleSchemaDataInnerConditions.md)
-- [ResponseCheckMultipleSchemaDataInnerRedemptions](docs/ResponseCheckMultipleSchemaDataInnerRedemptions.md)
-- [ResponseCheckMultipleSchemaDataInnerRedemptionsRedeemSkuCodesInner](docs/ResponseCheckMultipleSchemaDataInnerRedemptionsRedeemSkuCodesInner.md)
-- [ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore](docs/ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore.md)
-- [ResponseMarkUseMultipleSchema](docs/ResponseMarkUseMultipleSchema.md)
-- [ResponseMarkUseMultipleSchemaDataInner](docs/ResponseMarkUseMultipleSchemaDataInner.md)
-- [ResponseMarkUseMultipleSchemaDataInnerConditions](docs/ResponseMarkUseMultipleSchemaDataInnerConditions.md)
-- [ResponseMarkUseMultipleSchemaDataInnerRedemptions](docs/ResponseMarkUseMultipleSchemaDataInnerRedemptions.md)
-- [ResponseReservedSchema](docs/ResponseReservedSchema.md)
-- [ResponseReservedSchemaDataInner](docs/ResponseReservedSchemaDataInner.md)
-- [ResponseReservedSchemaDataInnerRedemptions](docs/ResponseReservedSchemaDataInnerRedemptions.md)
-- [ResponseReservedSchemaUsedStore](docs/ResponseReservedSchemaUsedStore.md)
-- [ResponseUnReservedSchema](docs/ResponseUnReservedSchema.md)
-- [ResponseUnReservedSchemaDataInner](docs/ResponseUnReservedSchemaDataInner.md)
+ - [RequestCheckMultipleBodySchema](docs/RequestCheckMultipleBodySchema.md)
+ - [RequestCheckMultipleBodySchemaSkusInfoInner](docs/RequestCheckMultipleBodySchemaSkusInfoInner.md)
+ - [RequestMarkUseMultipleBodySchema](docs/RequestMarkUseMultipleBodySchema.md)
+ - [RequestReservedBodySchema](docs/RequestReservedBodySchema.md)
+ - [RequestUnReservedBodySchema](docs/RequestUnReservedBodySchema.md)
+ - [ResponseCheckMultipleSchema](docs/ResponseCheckMultipleSchema.md)
+ - [ResponseCheckMultipleSchemaDataInner](docs/ResponseCheckMultipleSchemaDataInner.md)
+ - [ResponseCheckMultipleSchemaDataInnerConditions](docs/ResponseCheckMultipleSchemaDataInnerConditions.md)
+ - [ResponseCheckMultipleSchemaDataInnerRedemptions](docs/ResponseCheckMultipleSchemaDataInnerRedemptions.md)
+ - [ResponseCheckMultipleSchemaDataInnerRedemptionsRedeemSkuCodesInner](docs/ResponseCheckMultipleSchemaDataInnerRedemptionsRedeemSkuCodesInner.md)
+ - [ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore](docs/ResponseCheckMultipleSchemaDataInnerRedemptionsUsedStore.md)
+ - [ResponseMarkUseMultipleSchema](docs/ResponseMarkUseMultipleSchema.md)
+ - [ResponseMarkUseMultipleSchemaDataInner](docs/ResponseMarkUseMultipleSchemaDataInner.md)
+ - [ResponseMarkUseMultipleSchemaDataInnerRedemptions](docs/ResponseMarkUseMultipleSchemaDataInnerRedemptions.md)
+ - [ResponseReservedSchema](docs/ResponseReservedSchema.md)
+ - [ResponseReservedSchemaDataInner](docs/ResponseReservedSchemaDataInner.md)
+ - [ResponseReservedSchemaDataInnerRedemptions](docs/ResponseReservedSchemaDataInnerRedemptions.md)
+ - [ResponseReservedSchemaUsedStore](docs/ResponseReservedSchemaUsedStore.md)
+ - [ResponseUnReservedSchema](docs/ResponseUnReservedSchema.md)
+ - [ResponseUnReservedSchemaDataInner](docs/ResponseUnReservedSchemaDataInner.md)
 
 
 <a id="documentation-for-authorization"></a>
